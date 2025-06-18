@@ -1,25 +1,6 @@
 {
-    "author": "Luciano Lagassa",
+    "author": "FAM-System(dev: Avila, Brian Leonel - Franceschina, Gonzalo - Moccicafreddo, Juan Daniel)",
     "name": "API Server",
     "port": 3000,
-    "secret": "TryromUdquobWap2",
-    "token_users": [
-        {
-            "user": "admin",
-            "pass": "admin"
-        },
-        {
-            "user": "user",
-            "pass": "user"
-        },
-        {
-            "user": "demo",
-            "pass": "123456"
-        }
-    ],
-    "basic_users": {
-        "admin": "admin",
-        "user": "user",
-        "demo": "123456"
-    }
+    "secret": "TryromUdquobWap2"
 }
