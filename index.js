@@ -10,8 +10,9 @@ const loginRouter = require('./routes/ingreso');
 
 const configContent = fs.readFileSync('config.json');
 const config = JSON.parse(configContent);
-const port = config.port || 3000;
-config.version = '2025.05.08-14.38';
+const PORT = process.env.PORT || 3000;
+//const port = config.port || 3000;
+config.version = '1.2.5';
 
 
 
@@ -35,6 +36,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Servidor en Puerto ${port}`);
-});
+//app.listen(port, () => {
+//  console.log(`Servidor en Puerto ${port}`);
+//});
+app.listen(PORT, () => console.log(`Servidor corriendo en puerto ${PORT}`));
