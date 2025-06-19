@@ -26,7 +26,7 @@ app.get('/puestos', verify_token, authorize_roles(2), async function (req, res) 
 
   try {
     const [rows] = await pool.query(`SELECT
-    puestos.idPuesto,puestos.nombrePuesto,Puestos.disponible
+    puestos.idPuesto,puestos.nombrePuesto,puestos.disponible
 FROM
     puestos
 WHERE
