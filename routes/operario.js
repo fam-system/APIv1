@@ -37,7 +37,7 @@ if (rows.length === 0) {
 app.get('/tipoincidencias', verify_token, authorize_roles(4), async function (req, res) {
 
   try {
-    const [rows] = await pool.query(`SELECT * FROM tiposincidencias`);
+    const [rows] = await pool.query(`SELECT * FROM tiposIncidencias`);
     res.json(rows);
   } catch (err) {
     res.status(500).json({ error: err.message });
