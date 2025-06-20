@@ -160,7 +160,7 @@ app.post('/logout', verify_token, authorize_roles(2), async function (req, res) 
 app.get('/tipoincidencias', verify_token, authorize_roles(2), async function (req, res) {
 
   try {
-    const [rows] = await pool.query(`SELECT * FROM tiposincidencias`);
+    const [rows] = await pool.query(`SELECT * FROM tiposIncidencias`);
     res.json(rows);
   } catch (err) {
     res.status(500).json({ error: err.message });
